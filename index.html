@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+
+    <title>Ecommerce Food Website</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="imgs/1000001763.png" style="width: 100px; height: 90px;"
+                    class="img-fluid" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product_list.html">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product_history.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my_profile.html">Profile</a>
+                    </li>
+                </ul>
+                <button><a href="login.html">Login</a></button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ===========main=========== -->
+    <section class="main py-5">
+        <div style="margin-top: 150px;" class="container">
+            <div class="row align-items-center">
+                <!-- Left Column - Text Section -->
+                <div class="col-lg-6 col-md-12 text-md-center text-lg-start">
+                    <p class="text-success fw-bold">Organic Products</p>
+                    <h1 class="display-4 fw-bold">Good Food For
+                        <br>Good Health
+                    </h1>
+                    <div class="mb-3" style="border-bottom: 3px solid #28a745; width: 80px;"></div>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its
+                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                        letters</p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-outline-success">Shop Now</a>
+                    </div>
+                </div>
+                <!-- Right Column - Image Section -->
+                <div class="col-lg-6 col-md-12 text-center">
+                    <!-- Adding mt-md-5 to apply top margin only on medium devices and larger -->
+                    <img src="imgs/bg.jpg" alt="Organic Products" class="mt-3 img-fluid rounded">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =======Cart========== -->
+    <!-- Cart Section -->
+    <section class="cart" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+        <button class="btn btn-outline-success position-relative" data-bs-toggle="modal"
+            data-bs-target="#addToCartModal">
+            <i class="bi bi-bag-check" style="font-size: 28px;"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+                <span class="visually-hidden">items in cart</span>
+            </span>
+        </button>
+    </section>
+
+
+    <!-- Add to Cart Modal -->
+    <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="addToCartModalLabel">Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item d-flex justify-content-between align-items-center py-3 border-bottom">
+                        <div class="d-flex align-items-center">
+                            <img src="imgs/menu1.jpg" alt="Muffins" class="img-fluid rounded"
+                                style="width: 80px; height: 80px;">
+                            <div class="ms-3">
+                                <h6 class="mb-0">Muffins</h6>
+                                <small class="text-muted">Delicious muffins, perfect for breakfast or a snack.</small>
+                                <div class="mt-2">
+                                    <span class="badge bg-light text-dark">Quantity: 2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <h6>$11.20</h6>
+                            <button class="btn btn-outline-danger btn-sm mt-2">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item d-flex justify-content-between align-items-center py-3 border-bottom">
+                        <div class="d-flex align-items-center">
+                            <img src="imgs/menu2.jpg" alt="Pancakes" class="img-fluid rounded"
+                                style="width: 80px; height: 80px;">
+                            <div class="ms-3">
+                                <h6 class="mb-0">Pancakes</h6>
+                                <small class="text-muted">Soft and fluffy pancakes, perfect for brunch.</small>
+                                <div class="mt-2">
+                                    <span class="badge bg-light text-dark">Quantity: 1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <h6>$5.60</h6>
+                            <button class="btn btn-outline-danger btn-sm mt-2">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item d-flex justify-content-between align-items-center py-3 border-bottom">
+                        <div class="d-flex align-items-center">
+                            <img src="imgs/menu3.jpg" alt="Waffles" class="img-fluid rounded"
+                                style="width: 80px; height: 80px;">
+                            <div class="ms-3">
+                                <h6 class="mb-0">Waffles</h6>
+                                <small class="text-muted">Crispy waffles topped with fresh berries.</small>
+                                <div class="mt-2">
+                                    <span class="badge bg-light text-dark">Quantity: 3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <h6>$16.80</h6>
+                            <button class="btn btn-outline-danger btn-sm mt-2">Remove</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <div class="me-auto">
+                        <h5 class="mb-0">Subtotal: <span class="text-success">$33.60</span></h5>
+                    </div>
+                    <button type="button" class="btn btn-success">Checkout</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ===============About============== -->
+    <section id="about" class="about py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 ml-lg-5 order-2 order-lg-2">
+                    <div style="margin: auto; justify-content: center; text-align: center; align-items: center;">
+                        <h1 class="mb-3 fw-bold text-success">We Are Foodu</h1>
+                        <h4 class="mb-4 text-secondary" style="font-style: italic;">About our bistro</h4>
+                        <p class="">It is a long established fact that a reader will be distracted by the readable
+                            content of a page when
+                            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution of letters.
+                        </p>
+                        <p class="">It is a long established fact that a reader will be distracted by the readable
+                            content of a page when
+                            looking at its layout. The point of using Lorem Ipsum.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 order-1 order-lg-1">
+                    <div class="row">
+                        <div class="col-6 mb-4">
+                            <img src="imgs/big1.png" alt="" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6 mb-4">
+                            <img src="imgs/sm1.png" alt="" class="img-fluid rounded" style="height: 100%;">
+                        </div>
+                        <div class="col-6">
+                            <img src="imgs/sm2.png" alt="" class="img-fluid rounded" style="height: 100%;">
+                        </div>
+                        <div class="col-6">
+                            <img src="imgs/big2.png" alt="" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ===============Services============== -->
+    <section class="services py-5" style="background-color: #004d3e;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card p-4">
+                        <div class="icon mb-3">
+                            <img src="imgs/oredr.png" alt="Your Order" class="img-fluid" style="width: 60px;">
+                        </div>
+                        <h5 class="card-title text-success">Your Order</h5>
+                        <p class="text-muted">There are many variations of passages of Lorem Ipsum available.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-4">
+                        <div class="icon mb-3">
+                            <img src="imgs/deliver.png" alt="We Deliver" class="img-fluid" style="width: 60px;">
+                        </div>
+                        <h5 class="card-title text-success">We Deliver</h5>
+                        <p class="text-muted">There are many variations of passages of Lorem Ipsum available.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-4">
+                        <div class="icon mb-3">
+                            <img src="imgs/ffd.png" alt="Tasty Food" class="img-fluid" style="width: 60px;">
+                        </div>
+                        <h5 class="card-title text-success">Tasty Food</h5>
+                        <p class="text-muted">There are many variations of passages of Lorem Ipsum available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="menu py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Fresh and healthy dishes</h2>
+            <h3 class="text-center mb-4">Our Mouth Watering Menus</h3>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <img src="imgs/menu1.jpg" alt="Muffins" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h4>Muffins</h4>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when
+                        looking at its layout.</p>
+                    <button class="btn btn-outline-success">Order Now</button>
+                    <span class="price">$5.6</span>
+                </div>
+            </div>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6 order-md-2">
+                    <img src="imgs/menu2.jpg" alt="Pancakes" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h4>Pancakes</h4>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when
+                        looking at its layout.</p>
+                    <button class="btn btn-outline-success">Order Now</button>
+                    <span class="price">$5.6</span>
+                </div>
+            </div>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <img src="imgs/menu3.jpg" alt="Waffles" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h4>Waffles</h4>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when
+                        looking at its layout.</p>
+                    <button class="btn btn-outline-success">Order Now</button>
+                    <span class="price">$5.6</span>
+                </div>
+            </div>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6 order-md-2">
+                    <img src="imgs/menu4.jpg" alt="Bagels" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h4>Bagels</h4>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when
+                        looking at its layout.</p>
+                    <button class="btn btn-outline-success">Order Now</button>
+                    <span class="price">$5.6</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="customer-reviews py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Customers Say</h2>
+            <div class="row">
+                <!-- Customer Review 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="imgs/coustomer.png" alt="Customer 1" class="card-img-top rounded-circle mx-auto mt-4"
+                            width="100" height="100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jane Doe</h5>
+                            <p class="card-text">"The muffins were absolutely delicious, fresh, and healthy! I couldn't
+                                have
+                                asked for a better experience."</p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Customer Review 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="imgs/coustomer.png" alt="Customer 2" class="card-img-top rounded-circle mx-auto mt-4"
+                            width="100" height="100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">John Smith</h5>
+                            <p class="card-text">"I loved the pancakes! Great service, and the food arrived hot and
+                                fresh.
+                                Will order again for sure."</p>
+                            <div class="stars">
+                                ★★★★☆
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Customer Review 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="imgs/coustomer.png" alt="Customer 3" class="card-img-top rounded-circle mx-auto mt-4"
+                            width="100" height="100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Emily Johnson</h5>
+                            <p class="card-text">"The waffles were the best I've ever had. Crispy, flavorful, and served
+                                with fresh berries. Highly recommended!"</p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="meet-our-chef py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Meet Our Chef</h2>
+            <div class="row align-items-center">
+                <!-- Chef Image -->
+                <div class="col-md-6 mb-4">
+                    <div class="chef-image">
+                        <div>
+                            <img src="imgs/chef.png" alt="Chef" class="img-fluid rounded-circle shadow ">
+                        </div>
+                    </div>
+                </div>
+                <!-- Chef Details -->
+                <div class="col-md-6">
+                    <div class="chef-details">
+                        <h3>Chef John Doe</h3>
+                        <p>With over 15 years of experience in the culinary arts, Chef John Doe is passionate about
+                            creating
+                            healthy, delicious, and visually stunning dishes. His philosophy is to use fresh, locally
+                            sourced ingredients to bring out the best flavors in every dish.</p>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">"Cooking is not just a profession, it's an art that nourishes the soul."</p>
+                            <br>
+                            <footer class="blockquote-footer">Chef John Doe</footer>
+                        </blockquote>
+                        <p>From the delicate touch of pancakes to the hearty flavors of bagels and waffles, Chef John is
+                            committed to delivering the finest culinary experience to every customer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>About Us</h5>
+                    <p>We are committed to offering the finest organic food with a focus on quality and sustainability.
+                    </p>
+                    <a href="index.html#about" class="btn btn-success">Learn More</a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="services.html" class="text-light">Services</a></li>
+                        <li><a href="blog.html" class="text-light">Blog</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-telephone"></i> +1 (234) 567-890</p>
+                    <p><i class="bi bi-envelope"></i> info@foodu.com</p>
+                    <p><i class="bi bi-geo-alt"></i> 123 Food Street, Gourmet City, USA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

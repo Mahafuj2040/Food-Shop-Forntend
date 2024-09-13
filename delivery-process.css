@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #151618;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 20px;
+    padding: 10px;
+    position: relative;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+.nav-item a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: #28a745;
+    transition: width 0.4s ease;
+}
+
+.nav-item a:hover::before {
+    width: 100%;
+}
+
+.nav-item a:hover {
+    color: #28a745;
+    background-color: rgba(40, 167, 69, 0.1);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+
+}
+
+button a:hover {
+    background-color: #218838;
+}
+
+button {
+    background-color: #28a745;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 991px) {
+    .nav-item a {
+        margin-right: 0;
+        padding: 8px;
+    }
+}
+
+/* end nav */
+
+.shipping-billing,
+.package-details,
+.order-summary {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+.shipping-billing h5,
+.package-details h5,
+.order-summary h5 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.shipping-billing p,
+.package-details p,
+.order-summary p {
+    margin: 5px 0;
+}
+
+.delivery-option p {
+    margin: 5px 0;
+    color: #555;
+}
+
+button.btn {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+}
+
+button.btn:hover {
+    background-color: #28a745;
+    border-color: #28a745;
+}

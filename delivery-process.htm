@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="delivery-process.css">
+    <title>Delivery Process - Ecommerce Food Website</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="imgs/1000001763.png" style="width: 100px; height: 90px;"
+                    class="img-fluid" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product_list.html">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product_history.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="my_profile.html">Profile</a>
+                    </li>
+                </ul>
+                <button><a href="rej.html">Sign up</a></button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div style="margin-top: 100px;">
+
+    </div>
+
+
+    <!-- Modal for Editing Address -->
+    <div class="modal fade" id="editAddressModal" tabindex="-1" aria-labelledby="editAddressModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editAddressModalLabel">Edit Address</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label for="edit-name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="edit-name" value="MD. Mahafuj Rahman" required>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="mb-3">
+                            <label for="edit-address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="edit-address"
+                                value="Mahendra, Rajshahi Sugar Mills, Rajshahi" required>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="mb-3">
+                            <label for="edit-phone" class="form-label">Phone</label>
+                            <input type="text" class="form-control" id="edit-phone" value="+880 1305154353" required>
+                        </div>
+
+                        <!-- Save Button -->
+                        <button type="submit" class="btn btn-success">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Delivery Process Section -->
+    <section class="container mt-5 pt-5">
+        <h2 class="text-center mb-4">Delivery Process</h2>
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <!-- Shipping & Billing Section -->
+                <div class="shipping-billing mb-4 p-3 bg-light border rounded">
+                    <h5>Shipping & Billing</h5>
+                    <p><strong>Name:</strong> MD. Mahafuj Rahman</p>
+                    <p><strong>Address:</strong> Mahendra, Rajshahi Sugar Mills, Rajshahi</p>
+                    <p><strong>Phone:</strong> 13051545353</p>
+                    <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#editAddressModal">Edit</a>
+                </div>
+
+                <!-- Package Details Section -->
+                <div class="package-details mb-4 p-3 bg-light border rounded">
+                    <h5>Package 1 of 1</h5>
+                    <div class="row align-items-center mb-2">
+                        <!-- Image Section -->
+                        <div class="col-4 col-sm-3 col-md-2">
+                            <img src="imgs/menu2.jpg" alt="Item Image" class="img-fluid w-100">
+                        </div>
+                        <!-- Text Section -->
+                        <div class="col-8 col-sm-6 col-md-7">
+                            <h6>Hot Kurmury 11" Pizza</h6>
+                        </div>
+                        <!-- Price Section -->
+                        <div class="col-12 col-sm-3 col-md-3 text-md-end">
+                            <p class="mb-0"><strong>৳ 2,178</strong></p>
+                        </div>
+                    </div>
+                    <div class="delivery-option">
+                        <p><strong>Delivery Option:</strong> Standard Delivery</p>
+                        <p>Delivery Fee: ৳ 50</p>
+                        <p><small>Guaranteed by 18-23 Sep</small></p>
+                    </div>
+                </div>
+
+
+                <!-- Order Summary Section -->
+                <div class="order-summary mb-4 p-3 bg-light border rounded">
+                    <h5>Order Summary</h5>
+                    <div class="d-flex justify-content-between">
+                        <p>Items Total (1 item):</p>
+                        <p>৳ 2,178</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Delivery Fee:</p>
+                        <p>৳ 150</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Shipping Discount & Voucher:</p>
+                        <p>-৳ 100</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p><strong>Total:</strong></p>
+                        <p><strong>৳ 2,228</strong></p>
+                    </div>
+                    <button class="btn btn-primary w-100">Proceed to Pay</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>About Us</h5>
+                    <p>We are committed to offering the finest organic food with a focus on quality and sustainability.
+                    </p>
+                    <a href="#" class="btn btn-success">Learn More</a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="services.html" class="text-light">Services</a></li>
+                        <li><a href="blog.html" class="text-light">Blog</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-telephone"></i> +1 (234) 567-890</p>
+                    <p><i class="bi bi-envelope"></i> info@foodu.com</p>
+                    <p><i class="bi bi-geo-alt"></i> 123 Food Street, Gourmet City, USA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
